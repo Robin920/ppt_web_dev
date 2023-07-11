@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Footer</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+      footer {
+        background-color: #000;
+        padding: 5%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .foot_txt_one {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .foot_txt_one > h3 {
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.4rem;
+      }
+      .foot_txt_one > p {
+        color: #86807c;
+        font-weight: bolder;
+        font-size: 1rem;
+      }
+
+      .foot_txt_two, .foot_txt_three, .foot_txt_four {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .foot_txt_two > h3 , .foot_txt_three > h3, .foot_txt_four > h3{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.4rem;
+      }
+      .foot_txt_two > p, .foot_txt_three > p{
+        list-style: none;
+        color: #86807c !important;
+        font-weight: bolder;
+        font-size: 1rem;
+        margin-bottom: -8px;
+      }
+      input{
+        border: none;
+        border-radius: 5px;
+        padding: 5%;
+        color: #86807c;
+        margin-bottom: 5px;
+      }
+      button{
+        border: none;
+        border-radius: 5px;
+        padding: 5%;
+        color: #fff;
+        background-color: #1893f7;
+        width: 13vw;
+        font-weight: bolder;
+      }
+      
+      @media screen and (max-width: 768px) {
+            footer{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            button{
+                width: 50vw;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="foot_txt_one">
+        <h3>One Card</h3>
+        <p>
+          India's best metal credit card. Built with full- <br />
+          stack tech. Backed by the principles of <br />
+          simplicity, transparency, and giving back <br />
+          control the user.
+        </p>
+      </div>
+
+      <div class="foot_txt_two">
+        <h3>Navigation</h3>
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Offers</p>
+      </div>
+
+      <div class="foot_txt_three">
+        <h3>Support</h3>
+          <p>F.A.Q</p>
+          <p>Cookies Policy</p>
+          <p>Terms Of Service</p>
+          <p>Support</p>
+      </div>
+
+      <div class="foot_txt_four">
+        <h3>Newsletter</h3>
+
+        <div class="in_but">
+          <input type="text" placeholder="Your email id here" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
