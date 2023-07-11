@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #242b2e;
+        top: 0;
+        left: 0;
+      }
+      #check {
+        display: none;
+      }
+      .fa-bars {
+        color: #fff;
+        font-size: 30px;
+        display: none !important;
+      }
+
+      .options {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        color: #fff;
+      }
+      .logo {
+        height: 5vh;
+        width: 5vw;
+        margin-left: 10px;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        background-color: #0072e1;
+        color: #fff;
+        padding: 10px;
+        width: 6vw;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 15vh;
+      }
+      .left_txt_one {
+        color: #000;
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-bottom: -30px;
+      }
+      .left_txt_two {
+        color: #1893f7;
+        font-weight: bolder;
+        font-size: 3rem;
+        margin-bottom: -2px;
+      }
+      .left_txt_three {
+        color: #1893f7;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .company {
+        width: 35vw;
+      }
+      .left_txt_four {
+        color: #494949;
+        font-weight: bolder;
+        font-size: 1rem;
+      }
+
+      video {
+        width: 40vw;
+      }
+      .footer{
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+      .foot_txt_one{
+        color: #3639ba;
+        font-size: 2rem;
+      }
+      .foot_txt_two{
+        color: #fff;
+      }
+      .foot_txt_two > p {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        nav {
+          padding: 3%;
+        }
+        .container {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 2.5%;
+        }
+        .fa-bars {
+          display: block !important;
+          cursor: pointer;
+        }
+        .options {
+          display: none;
+        }
+        button {
+          display: none;
+        }
+        .footer{
+        background-color: #fff;
+        }
+        .foot_txt_two{
+        color: #000;
+      }
+        .right{
+            align-self: center;
+        }
+        .right > video{
+            width: 70vw;
+        }
+      }
+    </style>
+    <title>One card landing page</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./logo.png" alt="Logo" />
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="options">
+        <h3>Home</h3>
+        <h3>Blog</h3>
+        <h3>About</h3>
+        <h3>Contact</h3>
+      </div>
+
+      <button>Login</button>
+    </nav>
+
+    <div class="container">
+      <div class="left">
+        <p class="left_txt_one">Say Hi To</p>
+        <p class="left_txt_two">One Card</p>
+        <p class="left_txt_three">Co-branded Card issuers :</p>
+
+        <img class="company" src="./company.png" alt="companies" />
+
+        <p class="left_txt_four">
+          India's best metal card. Built with full-stack tech. Backed by the
+          <br />
+          principle of simplicity, transparency, and giving back control to
+          user.
+        </p>
+      </div>
+
+      <div class="right">
+        <video controls autoplay muted>
+          <source
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            type="video/ogg"
+          />
+        </video>
+      </div>
+    </div>
+
+    <div class="footer">
+        <h3 class="foot_txt_one">No Hidden Fees Ever</h3>
+        <div class="foot_txt_two">
+            <p>No Joining Fees.</p>
+            <p>No Annual Fees.</p>
+            <p>No Rewards Redemption Fees.</p>
+        </div>
+    </div>
+  </body>
+</html>
